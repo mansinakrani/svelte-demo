@@ -1,0 +1,10 @@
+<script>
+  import { createEventDispatcher } from 'svelte'
+  const dispatch = createEventDispatcher()
+</script>
+
+<div>
+  <h2>This is a popup</h2>
+  <!-- <button on:click={() => dispatch('close')}>Close Popup</button> -->
+  <button on:click={() => dispatch('close', 'MN')}>Close Popup</button> <!--passing data in dispatch event-->
+</div>
